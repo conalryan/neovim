@@ -3,33 +3,24 @@ call plug#begin('~/.config/nvim/plugged')
 " ------------------------------------------------------------------------------
 " Colors
 Plug 'cocopon/iceberg.vim'
+Plug 'rakr/vim-one'
 Plug 'challenger-deep-theme/vim'
 Plug 'tomasr/molokai'
+Plug 'altercation/vim-colors-solarized'
 
 " ------------------------------------------------------------------------------
 " Top Plugins https://vimawesome.com/
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
-Plug 'tpope/vim-commentary'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'scrooloose/syntastic'
 Plug 'vim-airline/vim-airline'
 Plug 'airblade/vim-gitgutter'
+Plug 'scrooloose/nerdcommenter'
 Plug 'majutsushi/tagbar'
 Plug 'kien/ctrlp.vim'
 Plug 'dense-analysis/ale'
-
-" Match VS Code Emulated plugins
-" https://github.com/VSCodeVim/Vim#-emulated-plugins
-Plug 'vim-airline/vim-airline'
-Plug 'easymotion/vim-easymotion'
-Plug 'tpope/vim-surround'
-Plug 'michaeljsmith/vim-indent-object'
-Plug 'justinmk/vim-sneak'
-Plug 'bkad/camelcasemotion'
-" Input Method
-Plug 'vim-scripts/ReplaceWithRegister'
 
 " ------------------------------------------------------------------------------
 " Java LSP support for ALE
@@ -52,10 +43,6 @@ colorscheme iceberg
 set number
 set nowrap           " do not automatically wrap on load
 set formatoptions-=t " do not automatically wrap text when typing
-set tabstop=8
-set shiftwidth=4
-set autoindent
-set smartindent
 
 "-------------------------------------------------------------------------------
 " CtrlP
